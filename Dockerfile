@@ -21,6 +21,10 @@ RUN set -x \
   && rm -rf /var/cache/apk/* /root/.node-gyp /usr/share/man /tmp/* \
   && echo
 
+RUN set -x \
+    && node -v \
+    && npm -v
+
 ENTRYPOINT ["/usr/bin/dumb-init"]
 
 CMD node
