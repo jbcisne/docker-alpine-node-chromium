@@ -11,7 +11,7 @@ RUN set -x \
   && echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories \
   \
   # Add the packages
-  && apk add --no-cache dumb-init curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ nss chromium \
+  && apk add --no-cache dumb-init curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ nss git chromium \
   \
   && npm install puppeteer@0.13.0 \
   \
